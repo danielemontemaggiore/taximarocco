@@ -1,5 +1,6 @@
 package daniele.taximarocco.com.taximarocco;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -31,7 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     private EditText editTextUserName;
     private EditText editTextPassword;
