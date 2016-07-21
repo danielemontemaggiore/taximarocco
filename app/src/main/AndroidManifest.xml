@@ -18,6 +18,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".SignupActivity"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniele.taximarocco.com.taximarocco.MainActivity" />
+        </activity>
+        <activity
             android:name=".UserProfile"
             android:parentActivityName=".MainActivity" >
             <meta-data

@@ -11,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
@@ -36,6 +38,7 @@ public class MainActivity extends Activity {
 
     private EditText editTextUserName;
     private EditText editTextPassword;
+    private TextView textViewLink_signup;
 
     public static final String USER_NAME = "USERNAME";
 
@@ -49,6 +52,17 @@ public class MainActivity extends Activity {
 
         editTextUserName = (EditText) findViewById(R.id.editTextUserName);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
+        textViewLink_signup = (TextView) findViewById(R.id.link_signup);
+
+        textViewLink_signup.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, SignupActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void invokeLogin(View view){
